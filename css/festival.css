@@ -1,0 +1,319 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+#wrap{
+    min-width: 900px;
+    max-width:1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    padding: 20px 50px 0px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50x;
+    position: fixed;
+    background-color:none;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    float: right;
+   
+}
+#mainmain{
+    position: relative;
+    background-color:none;
+    text-align: center;
+    width: 500px;
+}
+.main_visual{
+    width: 600px;
+    position: absolute;
+}
+
+/* 네비게이션 시작 */
+#navMenu {
+    list-style: none;
+    height: 30px;
+    width: 100%;
+    padding: 10px 10px;
+    padding-right:50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background:none;
+    float: right;
+    position: fixed;
+}
+
+#navMenu li {
+    list-style: none;
+    position: relative;
+    width: 100px;
+    float: right; 
+    margin: 0px 20px;
+    padding: 0;
+    text-align: left;
+    margin: 0px 50px 0px 0px; /* 상 우 하 좌 */
+    
+}
+#navMenu li a{
+    display:block;
+    padding:0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 350;
+    
+}
+
+#navMenu li:hover > a{
+    background:none;
+    color:gold;
+    margin: 0;
+    padding: 0px;
+
+}
+h1{
+    padding:0px;
+
+}
+#navMenu li:hover ul{
+    opacity: 1;
+    position:absolute;
+    
+}
+#navMenu li:hover ul li{
+    height: 20px;
+    padding-top:10px;
+}
+#navMenu ul {
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    color: black; 
+    width: 100px;
+    height: 20px;
+    float:left;
+    text-align: left;
+    opacity: 0;
+}
+#navMenu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    
+}
+#navMenu ul a {
+    font-weight: normal;
+    color: white; 
+    font-size:13px;
+    margin: 5px;
+    font-weight: 300;
+    text-align: left;
+    
+}
+#navMenu ul li:hover a{
+    /*background:blue;*/
+    height: 30px;
+    margin:5px;
+    color:gold;
+}
+#nevMenu .menuLink {
+    text-decoration:none;
+    color: black; 
+    display: block;
+    width: 100px;
+    font-size: 15px; 
+    font-weight: medium;  
+}
+/* 네비게이션 끝 */
+.float_left {float: left;}
+.float_right {float: right;}
+.clear {clear:both; height: 0; overflow:hidden;}
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+
+img{
+    margin-bottom: -5px;
+}
+.section{
+       text-align:right;
+       /*background: black;*/
+       color: white;
+       /* padding: 0px  100px; 상하 좌우 */
+   }
+#section1{
+    text-align:left;
+    background-image: url("../tour/444.jpg");
+    background-size:cover;
+    height:1000px;
+    /* padding: 0px  100px; 상하 좌우 */
+    position: relative;
+}
+#section2{
+    text-align:left;
+    background-image: url("../festival/4.jpg");
+    background-size:cover;
+    height: 970px;
+    /* padding: 0px  100px; 상하 좌우 */
+    position: relative;
+}
+#section2:after{
+    background-color:rgba(0, 0, 0, 0.247);
+    /* padding: 0px  100px; 상하 좌우 */
+    position: absolute;
+}
+#section3{
+   text-align:left;
+    background-image: url("../festival/3.jpg") ;
+    background-size:cover;
+    height: 1000px;
+    /* padding: 0px  100px; 상하 좌우 */
+    position: relative;
+
+    /* padding: 0px  100px; 상하 좌우 */
+}
+#section4{
+    text-align:left;
+    background-image: url("../festival/7.jpg") ;
+    background-size:cover;
+    height: 1000px;
+    /* padding: 0px  100px; 상하 좌우 */
+    position: relative;
+
+ }
+#section3>img{
+    margin-right:400px;
+}
+#box{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.85; 
+    font-size:0px;
+}
+/* section */
+section #about_list{
+   padding:0px 100px;
+   text-align: center;
+}
+
+/* 페스티벌 */
+#festival1 ul{
+    float: left;
+    padding:50px 0px;
+}
+#festival1 li{
+    float:left;
+    list-style: none;
+    width: 20%;
+    padding-left: 30px;
+}
+
+#festival1{
+    padding: 0px 200px;
+}
+#festival1 img{
+    width: 104%;
+    display:block;
+    margin-top: 400px;
+    margin-left: 500px;
+}
+.festival1>li{
+   position: static; /* 옛명령 무시 */
+   position: relative; /* 관계형 */
+   /* relative 부모는 absolute 자식의 기준점이 됨 */
+   width:300px; height:300px; overflow:hidden;
+   /*overflow:hidden을 선언해줘야 확대 시 이미지가 밖으로 넘치지 않아요!*/
+}
+
+footer{
+    text-align:center; 
+    background: black;
+    color:gold;
+    text-align: center;
+    height:100px;
+    width: 100%;
+    padding-top: 50px;
+    font-weight: 200;
+    /* padding: 0px  100px; 상하 좌우 */
+}
+
+.fesimg{
+   position:absolute;
+   top: 55%;
+   right: 0;
+   margin-right: 80px;
+}
+.fesimg img{
+   width: 350px;
+   padding-left:15px;
+}
+.festext{
+   position: absolute;
+   right: 0;
+   margin-right: 50px;
+   width: 110%;
+}
+.festext>dl>dt{
+    color:white;
+    width:400px;
+    top:270px;
+    right:24%;
+    font-size:26px;
+    font-weight: 400;
+    position: absolute;
+    transform:translateX(-50%);
+}
+.festext>dl>dt:hover{
+    color: gold;
+    text-decoration: underline;
+}
+.festext>dl>dd{
+    color:white;
+    width:1000px;
+    top:350px;
+    right:20%;
+    left:71%;
+    line-height:30px;
+    font-size:16px;
+    font-weight: 200;
+    position: absolute;
+    transform:translateX(-50%);
+}
+h4{
+   color:gold;
+   font-size:100px;
+   top:250px;
+   left:19%;
+   font-weight: 400;
+   transform:translateX(-50%);
+   position:fixed;
+   z-index: 5;
+}
+h5{
+   color:white;
+   font-size:30px;
+   top:200px;
+   left:19%;
+   font-weight: 200;
+   transform:translateX(-50%);
+   position:fixed;
+   z-index: 5;
+}
+   
+#h21{
+   font-size: 40px;
+   font-weight: normal;
+   letter-spacing: 15px;
+   padding:0px 0px 0px 0px;
+   color:white;
+   text-align: center;
+
+
+}
