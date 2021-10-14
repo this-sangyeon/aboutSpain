@@ -1,135 +1,32 @@
-
-    body{
-        margin: 0px;
-        background-color: black;
-    }
-    #wrap{
-        min-width: 900px;
-        max-width:1680px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header{
-        padding: 20px 50px 0px 0px;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 50x;
-        position: fixed;
-        background-color:none;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-        float: right;
-       
-    }
-
-   /* 네비게이션 시작 */
-#navMenu {
-    list-style: none;
-    height: 30px;
-    width: 100%;
-    padding: 10px 10px;
-    padding-right:50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background:none;
-    float: right;
-    position: fixed;
-}
-
-#navMenu li {
-    list-style: none;
+html,
+body{
+    width: 100%; height: 100%;
+    margin: 0; padding:0;
+    background-color: blue;
     position: relative;
-    width: 100px;
-    float: right; 
-    margin: 0px 20px;
-    padding: 0;
-    text-align: left;
-    margin: 0px 50px 0px 0px; /* 상 우 하 좌 */
-    
-}
-#navMenu li a{
-    display:block;
-    padding:0;
-    margin: 0;
-    color: white;
-    text-decoration: none;
-    font-weight: 350;
-    
 }
 
-#navMenu li:hover > a{
-    background:none;
-    color:gold;
-    margin: 0;
-    padding: 0px;
+header{
+    background-color:none;position: fixed;z-index: 9999;top: 1%;left: 0;width: 100%;height: 150px;display: flex; flex-direction: row; justify-content: space-between;
+}
+header .logo_img > img{
+    width:70px; margin-left: 20px;z-index: 9999;position: fixed;
+}
+header .spainMenu{
+    width: 50%; height: 100%;position: absolute;right:5%; text-align: right;
+}
+header .spainMenu > ul {
+    position: absolute;width: 100%; display: flex;  justify-content: right;
+}
+header .spainMenu > ul  > li{
+    display: inline-block;font-weight: 200;font-size: 1rem; color:black; letter-spacing: 2px;margin-right:5%;  margin-left:5%; 
+   
+}
 
-}
-h1{
-    padding:0px;
-
-}
-#navMenu li:hover ul{
-    opacity: 1;
-    position:absolute;
-    
-}
-#navMenu li:hover ul li{
-    height: 20px;
-    padding-top:10px;
-}
-#navMenu ul {
-    list-style: none;
-    padding: 0px;
-    position: absolute;
-    color: black; 
-    width: 100px;
-    height: 20px;
-    float:left;
-    text-align: left;
-    opacity: 0;
-}
-#navMenu ul li {
-    float: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-    
-}
-#navMenu ul a {
-    font-weight: normal;
-    color: white; 
-    font-size:13px;
-    margin: 5px;
-    font-weight: 300;
-    text-align: left;
-    
-}
-#navMenu ul li:hover a{
-    /*background:blue;*/
-    height: 30px;
-    margin:5px;
-    color:gold;
-}
-#nevMenu .menuLink {
-    text-decoration:none;
-    color: black; 
-    display: block;
-    width: 100px;
-    font-size: 15px; 
-    font-weight: medium;  
-}
-/* 네비게이션 끝 */
-    .float_left {float: left;}
-    .float_right {float: right;}
-    .clear {clear:both; height: 0; overflow:hidden;}
-    *{margin:0;padding:0;}
-    ul,li{list-style:none;}
 
     /* 슬라이드 시작 */
-    .slide{width:100%; height:1000px; z-index: 5; overflow:hidden; background-image:"./tour/1-1.jpg";}
+    .slide{width:100%; height:100%; z-index: 100; overflow:hidden; background-image:"./tour/1-1.jpg"; 
+    background-size: cover; position: absolute; top:0; margin:0; }
     .slide ul{width:calc(100% * 4);display:flex;animation:slide 20s infinite; transition:5s;} /* slide를 8초동안 진행하며 무한반복 함 */
     .slide li{width:calc(100% / 4); /*height:700px;*/}
     .slide li:nth-child(1){background-image:"./tour/2-2.jpg";}
@@ -152,26 +49,12 @@ h1{
         100% {margin-left:0;}
     }
       /* 백그라운드 이미지 사용*/
-      /*
-      #main_visual{
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        background-color: black;
-        background-position: 50% 50%;
-        width: 100%;
-        color: white;
-        text-align: center;
-        padding: 100px 0px; 
-        */
-    }
     section{
         text-align:left;
-        /*background: black;*/
         background-image: url("./tour/444.jpg");
         color: white;
-        height:2200px;
-        /* padding: 0px  100px; 상하 좌우 */
+        height:100%;
+
     }
 
     .main_img{
@@ -181,41 +64,26 @@ h1{
         padding-left: 0px;
         background-size: cover;
         display: block;
-        float: none;
-
+        position: absolute; top:0;
+        margin-top:0;
     }
-    img{
-        margin-bottom: -5px;
-    }
-    /* 비주얼 타이틀 */
-    #visual_title_top{
-        padding:120px 0px 20px 0px;
-        font-size: 17px;
-        color:white;
-        text-align: center;
-    }
-    #visual_title_bottom{
-        font-size: 20px;
-        padding:20px 0px 120px 0px;
-        text-align: center;
-        color:white;
-    }
-    /* 메인 비주얼 */
-    #main_visual img{
-        margin: 100px 0px 0px 0px; /* 상 우 하 좌 */
-    }
-    /* 슬라이드 끝 */
-
+   
+ 
     footer{
-        text-align:center; 
-        background: #f1f1f1;
-        color:black;
-        text-align: center;
-        height:100px;
-        width: 100%;
-        padding-top: 50px;
-        /* padding: 0px  100px; 상하 좌우 */
-    }
+        /* width: 100%; */
+        position: absolute;
+        width: 100vw;
+        height:20px;
+        background-color:none;
+        margin: 0;
+        bottom:0;
+        z-index: 9999;
+      }
+      footer>p{
+        /* width: 100%; */
+       margin: 0;
+      }
+    
      h4{
         color:white;
         font-size:100px;
@@ -233,11 +101,3 @@ h1{
         left:50%;
         font-weight: 200;
         transform:translateX(-50%);}
-    #h21{
-        font-size: 40px;
-        font-weight: normal;
-        letter-spacing: 15px;
-        padding:0px 0px 0px 0px;
-        color:white;
-        text-align: center;
-    }
