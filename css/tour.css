@@ -1,196 +1,39 @@
 body{
     margin: 0px;
-    background-color: black;
-}
-#wrap{
-    min-width: 900px;
-    max-width:1680px;
-    margin-left: auto;
-    margin-right: auto;
-}
-header{
-    padding: 20px 50px 0px 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 50x;
-    position: fixed;
-    background-color:none;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    float: right;
-   
-}
-#mainmain{
-    position: relative;
-    background-color:none;
-    text-align: center;
-    width: 500px;
-}
-.main_visual{
-    width: 600px;
-    position: absolute;
-}
-
-/* 네비게이션 시작 */
-#navMenu {
-    list-style: none;
-    height: 30px;
     width: 100%;
-    padding: 10px 10px;
-    padding-right:50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background:none;
-    float: right;
-    position: fixed;
+     height: 100%;
+    background-color: white;
 }
 
-#navMenu li {
-    list-style: none;
-    position: relative;
-    width: 100px;
-    float: right; 
-    margin: 0px 20px;
-    padding: 0;
-    text-align: left;
-    margin: 0px 50px 0px 0px; /* 상 우 하 좌 */
-    
-}
-#navMenu li a{
-    display:block;
-    padding:0;
-    margin: 0;
-    color: white;
-    text-decoration: none;
-    font-weight: 350;
-    
-}
 
-#navMenu li:hover > a{
-    background:none;
-    color:gold;
-    margin: 0;
-    padding: 0px;
+
+section{
+     width: 100%;
+     height: 100%;
+      
+}
+section .section{
+    width: 100%;
+    height: 100%;
 
 }
-h1{
-    padding:0px;
-
-}
-#navMenu li:hover ul{
-    opacity: 1;
-    position:absolute;
-    
-}
-#navMenu li:hover ul li{
-    height: 20px;
-    padding-top:10px;
-}
-#navMenu ul {
-    list-style: none;
-    padding: 0px;
-    position: absolute;
-    color: black; 
-    width: 100px;
-    height: 20px;
-    float:left;
-    text-align: left;
-    opacity: 0;
-}
-#navMenu ul li {
-    float: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-    
-}
-#navMenu ul a {
-    font-weight: normal;
-    color: white; 
-    font-size:13px;
-    margin: 5px;
-    font-weight: 300;
-    text-align: left;
-    
-}
-#navMenu ul li:hover a{
-    /*background:blue;*/
-    height: 30px;
-    margin:5px;
-    color:gold;
-}
-#nevMenu .menuLink {
-    text-decoration:none;
-    color: black; 
-    display: block;
-    width: 100px;
-    font-size: 15px; 
-    font-weight: medium;  
-}
-/* 네비게이션 끝 */
-.float_left {float: left;}
-.float_right {float: right;}
-.clear {clear:both; height: 0; overflow:hidden;}
-*{margin:0;padding:0;}
-ul,li{list-style:none;}
-
-img{
-    margin-bottom: -5px;
-}
-.section{
-       text-align:right;
-       /*background: black;*/
-       color: white;
-       /* padding: 0px  100px; 상하 좌우 */
-       position:f
-   }
-#section1{
-    text-align:left;
-    background-image: url("../tour/1.jpg");
+.mainImg{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    /* background-image: url("img/main/2-2.jpg"); */
     background-attachment : fixed;
+    background-position:center;
     background-size:cover;
-    height:1000px;
-    /* padding: 0px  100px; 상하 좌우 */
     position: relative;
 }
-#section2{
-    text-align:left;
-    background-image: url("../tour/555.jpg");
-    background-size: cover;
-    background-attachment : fixed;
-    height:1000px;
-    /* padding: 0px  100px; 상하 좌우 */
-    position: relative;
-}
-#section3{
-   text-align:left;
-    background-image: url("../tour/88.jpg") ;
-    background-size: cover;
-    background-attachment : fixed;
-    height:900px;
-    /* padding: 0px  100px; 상하 좌우 */
-    position: relative;
-}
-
-#section3>img{
-    margin-right:400px;
-}
-#section4{
-    text-align:left;
-    background: black;
-    height:700px;
-    /* padding: 0px  100px; 상하 좌우 */
-}
-#box{
-    position:absolute;
+.box{
+    position: absolute;
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.85; 
-    font-size:0px;
+    opacity: 0.5;
+    
 }
 
 footer{
