@@ -10,49 +10,89 @@ body{
 section{
     width: 100%;
     height: 100%;
+    
       
 }
 section .bg-section.barcelona{
     width: 100%;
     height: 100%;
-    background-image: url("../img/main/2-2.jpg");
+    background-image: url("../img/tour/6.jpg");
     background-attachment : fixed;
     background-position:center;
     background-size:cover;
     position: relative;
       
 }
+
+
 section .Tourist{
     width: 100%;
     height: 100%;
-    position: absolute;
-    display: flex; 
+    
+    
 }
-section .Tourist.barcelona{
-    background-image: url("../img/main/2-2.jpg");
-    background-position:center;
-    background-size:cover;
-}
+
 section .Tourist .barcelona{
-    width: 100%;height: 100%; display: flex; justify-content:center; align-items: center; justify-items: center;
+    width: 100%;height: 100%; display: flex; position:relative;
+     justify-content:center; align-items: center; justify-items: center;
+     background-image: url("../img/main/2-2.jpg");  z-index: 500;
     
 }
 section .Tourist .barcelona h2{
-    position: absolute;
+    position: absolute; top: 3%; 
+    font-family: 'Montserrat'; font-size: 5rem;
 }
 section .Tourist .barcelona .barcelona-list{
-    width: 100%;height: 100%; color:white;
-}
-section .Tourist .barcelona .barcelona-list > ul{
-    width: 100%;height: 100%;
+    width:100%; height: 50%; color:white; 
 }
 section .Tourist .barcelona .barcelona-list > ul > li{
-    width: 80%;height: 100%;
+    width: 90%;height: 100%; display: flex; flex-direction: column;  
+    justify-content:center; align-items: center; justify-items: center;
+    
 }
 section .Tourist .barcelona .barcelona-list > ul >li > dl{
     width: 100%;height: 100%;
 }
+section .Tourist .barcelona .barcelona-list > ul >li > dl > dd{
+    margin:0; text-align: justify;
+}
 
+/* Sevilla */
+section .bg-section.Sevilla{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/tour/77.jpg");
+    background-attachment : fixed;
+    background-position:center;
+    background-size:cover;
+    position: relative;
+      
+}
+
+section .Tourist .Sevilla{
+    width: 100%;height: 100%; display: flex; position: absolute;
+     justify-content:center; align-items: center; justify-items: center;
+     background-image: url("../img/main/2-2.jpg");
+    
+}
+section .Tourist .Sevilla h2{
+    position: absolute; top: 3%; 
+    font-family: 'Montserrat'; font-size: 5rem;
+}
+section .Tourist .Sevilla .Sevilla-list{
+    width:100%; height: 50%; color:white; 
+}
+section .Tourist .Sevilla .Sevilla-list > ul > li{
+    width: 90%;height: 100%; display: flex; flex-direction: column;  
+    justify-content:center; align-items: center; justify-items: center;
+    
+}
+section .Tourist .Sevilla .Sevilla-list > ul >li > dl{
+    width: 100%;height: 100%;
+}
+section .Tourist .Sevilla .Sevilla-list > ul >li > dl > dd{
+    margin:0; text-align: justify;
+}
 
 
 
@@ -70,96 +110,4 @@ footer{
     font-weight: 200;
     /* padding: 0px  100px; 상하 좌우 */
 }
-
-.sec{
-    float:left;
-    margin:50px 20px;
-    margin-top:12%;
-    position: relative;
-    width: 400px;
-}
-.sec:first-child{
-    margin-left:12%;
-}
-#sec1:after{
-    content:"";
-    display: table;
-    clear: both;
-}
-.sec dt{
-    width: 400px;
-    color: white;
-    margin-top:15%;
-    font-size:26px;
-    font-weight: 400;
-}
-.sec dd{
-    width: 400px;
-    color: white;
-    margin-top:30px;
-    margin-bottom:180px;
-    font-size:16px;
-    font-weight: 300;
-    line-height:24px;
-}
-.sec2{
-    float:left;
-    margin:50px 20px;
-    margin-top:17%;
-    position: relative;
-    width: 400px;
-}
-.sec2:first-child{
-    margin-left:12%;
-}
-#sec3:after{
-    content:"";
-    display: table;
-    clear: both;
-}
-.sec2 dt{
-    width: 400px;
-    color: white;
-    margin-top:15%;
-    font-size:26px;
-    font-weight: 400;
-}
-.sec2 dd{
-    width: 400px;
-    color: white;
-    margin-top:30px;
-    margin-bottom:180px;
-    font-size:16px;
-    font-weight: 300;
-    line-height:24px;
-    text-align:justify;
-}
-#name{
-    font-size: 180px;
-    color:black;
-    padding-top:0px;
-    padding-left:100px;
-    position:absolute;
-    font-style: oblique;
-    text-shadow:
-    -1px -1px 0 gold,
-    1px -1px 0 gold,
-    -1px 1px 0 gold,
-    1px 1px 0 gold; 
-    }
-
-#name2{
-    font-size: 180px;
-    color:black;
-    padding-top:0px;
-    padding-left:1050px;
-    position:absolute;
-    font-style: oblique;
-    text-shadow:
-    -1px -1px 0 gold,
-    1px -1px 0 gold,
-    -1px 1px 0 gold,
-    1px 1px 0 gold; 
-    }
-    
 
