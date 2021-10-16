@@ -45,13 +45,21 @@ leftBtn.addEventListener('click', function(){
      }
  });
 
-var timer = undefined;
-function autoSilde(){
-    if(timer == undefined){
-        timer = setInterval(function(){
-            counter = mainSlides.length - 2;
-        }, 2000);
-    }
-}
-autoSilde();
+// 자동슬라이드 도전 중..
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides(){
+//    for( let i = 0; i < mainSlides.length; i++ ){
+//     mainSlides[i].style.display = "none";
+//    }
+//    slideIndex++;
+//    if(slideIndex > mainSlides.length ){
+//        slideIndex = 1;
+//    }
+//    mainSlides[slideIndex - 1].style.display = "block";
+//    setTimeout(showSlides, 2000);
+// }
+
+
 
