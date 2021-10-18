@@ -20,8 +20,6 @@ section .bg-section{
     position: absolute;
    
 }
-
-
 section .bg-section.title{
     background-image: url("../img/festival/2.jpg");
     background-attachment : fixed;
@@ -75,14 +73,14 @@ section .bg-section .festival-area  {
     width: 100%;height: 100vh; display: flex; position:relative;
      justify-content:center; align-items: center; justify-items: center;
      visibility: hidden;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
     opacity: 0; z-index: 500;
      
     
 }
 section .bg-section .festival-area.active {
     visibility: visible;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
     opacity: 1;
 }
 section .bg-section .festival-area .title-area {
@@ -105,155 +103,34 @@ section .bg-section .festival-area .title-area  p:first-of-type {
 }
 section .bg-section .festival-area .festival-list{
     display: flex;
-    width:20%; height: 100%; color:white; position: absolute;  right:15%;
+    width:20%; height: 100%; color:white; position: absolute;  right:17%;
     justify-content:center; align-items: center; justify-items: center;
 }
 section .bg-section .festival-area .festival-list >img{
-   width: 450px;position: absolute;
+   width: 450px;position: absolute;transform: rotate(0deg);
 }
-section .bg-section .festival-area .festival-list >img:first-of-type{
-    position: absolute; top:10%; right:10%; transform: rotate(-20deg);
+section .bg-section .festival-area .festival-list > img:first-child{
+    position: absolute;top:10%; left:10%; transform: rotate(-10deg);
  }
- section .bg-section .festival-area .festival-list >img:nth-of-type(2){
-   position: absolute; bottom:10%; left:10%; transform: rotate(10deg);z-index: 100;
+ /* section .bg-section .festival-area .festival-list >img:first-child.active{
+    position: absolute;top:10%; left:10%; margin-top:-60%; width:400px;left: -30%; transform: rotate(-30deg)
+ } */
+ section .bg-section .festival-area .festival-list >img:last-child{
+   position: absolute; bottom:5%; left:10%; transform: rotate(10deg);z-index: 100; width: 500px;
  }
-#section4{
-    text-align:left;
-    background-image: url("../festival/7.jpg") ;
-    background-size:cover;
-    height: 1000px;
-    /* padding: 0px  100px; 상하 좌우 */
-    position: relative;
-
- }
-#section3>img{
-    margin-right:400px;
-}
-#box{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.85; 
-    font-size:0px;
-}
-/* section */
-section #about_list{
-   padding:0px 100px;
-   text-align: center;
-}
-
-/* 페스티벌 */
-#festival1 ul{
-    float: left;
-    padding:50px 0px;
-}
-#festival1 li{
-    float:left;
-    list-style: none;
-    width: 20%;
-    padding-left: 30px;
-}
-
-#festival1{
-    padding: 0px 200px;
-}
-#festival1 img{
-    width: 104%;
-    display:block;
-    margin-top: 400px;
-    margin-left: 500px;
-}
-.festival1>li{
-   position: static; /* 옛명령 무시 */
-   position: relative; /* 관계형 */
-   /* relative 부모는 absolute 자식의 기준점이 됨 */
-   width:300px; height:300px; overflow:hidden;
-   /*overflow:hidden을 선언해줘야 확대 시 이미지가 밖으로 넘치지 않아요!*/
-}
-
-footer{
-    text-align:center; 
-    background: black;
-    color:gold;
-    text-align: center;
-    height:100px;
-    width: 100%;
-    padding-top: 50px;
-    font-weight: 200;
-    /* padding: 0px  100px; 상하 좌우 */
-}
-
-.fesimg{
-   position:absolute;
-   top: 55%;
-   right: 0;
-   margin-right: 80px;
-}
-.fesimg img{
-   width: 350px;
-   padding-left:15px;
-}
-.festext{
-   position: absolute;
-   right: 0;
-   margin-right: 50px;
-   width: 110%;
-}
-.festext>dl>dt{
-    color:white;
-    width:400px;
-    top:270px;
-    right:24%;
-    font-size:26px;
-    font-weight: 400;
-    position: absolute;
-    transform:translateX(-50%);
-}
-.festext>dl>dt:hover{
-    color: gold;
-    text-decoration: underline;
-}
-.festext>dl>dd{
-    color:white;
-    width:1000px;
-    top:350px;
-    right:20%;
-    left:71%;
-    line-height:30px;
-    font-size:16px;
-    font-weight: 200;
-    position: absolute;
-    transform:translateX(-50%);
-}
-h4{
-   color:gold;
-   font-size:100px;
-   top:250px;
-   left:19%;
-   font-weight: 400;
-   transform:translateX(-50%);
-   position:fixed;
-   z-index: 5;
-}
-h5{
-   color:white;
-   font-size:30px;
-   top:200px;
-   left:19%;
-   font-weight: 200;
-   transform:translateX(-50%);
-   position:fixed;
-   z-index: 5;
-}
-   
-#h21{
-   font-size: 40px;
-   font-weight: normal;
-   letter-spacing: 15px;
-   padding:0px 0px 0px 0px;
-   color:white;
-   text-align: center;
+ /* section .bg-section .festival-area .festival-list >img:last-child.active{
+    position: absolute; bottom:10%; left:10%; transform: rotate(10deg);z-index: 100;
+  } */
 
 
+  footer{
+    width: 100vw;height:30px;
+    background-color:none;z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+    background-color: rgb(255, 198, 9);
+    border-top:solid 1px black;
 }
+footer > p{
+    margin: 0;
+}
+
