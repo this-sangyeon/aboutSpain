@@ -52,22 +52,23 @@ section .bg-section .black-area{
 }
 
 section .bg-section .art-area{
-    width: 100vw; height: 100%;position: absolute;top:0; z-index: 1000; overflow-x: scroll ;
+    width: 100vw; height: 100%;position: absolute;top:0; z-index: 1000; 
     
 }
 section .bg-section .art-area .art-list{
-    width: 100%; height: 100%;position: absolute;  display: flex; justify-items: center; align-items: center; 
+    width: 100%; height: 100%;position: absolute;  display: flex; justify-items: center; align-items: center; overflow-x: scroll ;
 }
 section .bg-section .art-area .art-list .artwork{
      width: 50%; height: 60%;display: flex; flex-direction: column;
-     justify-items: center; align-items: center;  justify-content: center; margin-left: 100px;
+     justify-items: center; align-items: center;  justify-content: center; 
+     margin-left: 50px; margin-right: 50px;
 }
 section .bg-section .art-area .art-list .artwork > img{
    height: 400px;
 }
 section .bg-section .art-area .art-list .artwork > div{
     width: 200px;height: 30px; background-color: thistle; border-radius: 30px;
-    visibility: hidden;
+    visibility: hidden; 
  }
  section .bg-section .art-area .art-list .artwork > div.active{
     visibility: visible;
