@@ -108,15 +108,15 @@ section .bg-section .festival-area .festival-list >img{
 section .bg-section .festival-area .festival-list > img:first-child{
     position: absolute;top:10%; left:10%; transform: rotate(-10deg);
  }
- /* section .bg-section .festival-area .festival-list >img:first-child.active{
+ section .bg-section .festival-area .festival-list >img:first-child.active{
     position: absolute;top:10%; left:10%; margin-top:-60%; width:400px;left: -30%; transform: rotate(-30deg)
- } */
+ }
  section .bg-section .festival-area .festival-list >img:last-child{
    position: absolute; bottom:5%; left:10%; transform: rotate(10deg);z-index: 100; width: 500px;
  }
- /* section .bg-section .festival-area .festival-list >img:last-child.active{
+ section .bg-section .festival-area .festival-list >img:last-child.active{
     position: absolute; bottom:10%; left:10%; transform: rotate(10deg);z-index: 100;
-  } */
+  }
 
 
   footer{
@@ -129,4 +129,3 @@ section .bg-section .festival-area .festival-list > img:first-child{
 footer > p{
     margin: 0;
 }
-

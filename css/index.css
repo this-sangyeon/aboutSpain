@@ -42,15 +42,19 @@ section .bg-section  .main_text > p > span{
 }
 
 section .bg-section .slide-area{
-    width: 100%; height: 100%; background: white; 
+ height: 100%; background: white; 
     position:fixed;  top:0; display: flex;
 }
 section .bg-section .slide-area .main_slide {
-    width: 100%; height: 100%;
+    width: 100vW; height: 100vh;
 }
 section .bg-section  .slide-area .main_slide .slide-img{
     width: 100%; height: 100%; position: relative;  top:0;
 }
+section .bg-section  .slide-area .main_slide .slide-img >img{
+    width: 100%; height: 100%; object-fit: cover;
+}
+
 section .bg-section .slider-btn{
     width: 50%; height: 100%; position: fixed; top: 50%; left:10%; z-index: 1000; 
     display: flex; 
