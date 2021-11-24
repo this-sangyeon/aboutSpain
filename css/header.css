@@ -35,3 +35,13 @@ header .spainMenu > ul  > li > a:hover{
     text-decoration : none;color:white;
     transition: 0.3s ease-in-out;
 }
+
+header > #tour-header > ul > li >a {
+    color:white; 
+}
+header > #festival-header > ul > li >a {
+    color:white; 
+}
+header > #art-header > ul > li >a {
+    color:white; 
+}
