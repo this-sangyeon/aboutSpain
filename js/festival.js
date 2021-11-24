@@ -1,13 +1,15 @@
 let bgSection = document.querySelectorAll('.bg-section > .festival-area');
 let festivalListBtn = document.querySelectorAll('.festivalMenu > ul > li')
-let festivalFirstImage = document.querySelectorAll('.bg-section > .festival-list > .first-img')
-let festivalLastImage = document.querySelectorAll('.bg-section > .festival-list > .last-img')
+let festivalArea = document.querySelectorAll('.bg-section > .festival-list');
+let festivalFirstImage = document.querySelectorAll('.bg-section > .festival-list > img:first-of-type')
+let festivalLastImage = document.querySelectorAll('.bg-section > .festival-list > img:last-of-type')
 
 
 bgSection = Array.prototype.slice.call(bgSection);
 festivalListBtn = Array.prototype.slice.call(festivalListBtn);
 festivalFirstImage = Array.prototype.slice.call(festivalFirstImage);
 festivalLastImage = Array.prototype.slice.call(festivalLastImage);
+festivalArea =Array.prototype.slice.call(festivalArea);
 
 
 for(let i=0; i< bgSection.length; i++){
@@ -17,21 +19,9 @@ for(let i=0; i< bgSection.length; i++){
         console.log(index, target);
         for(let j = 0; j < festivalListBtn.length; j++){
             bgSection[j].classList.remove('active');
-           
+            
         }
         bgSection[index].classList.add('active');
         
-        for(let i = 0; i < festivalFirstImage.length; i++){
-            festivalFirstImage[i].classList.add('active');
-            festivalLastImage[i].classList.add('active');
-        }
-        festivalFirstImage[i].classList.remove('active');
-        festivalLastImage[i].classList.remove('active');
-        // if(index === 0){
-        //     console.log('click');
-        //     festivalFirstImage.classList.add('active');
-        //     festivalLastImage.classList.add('active');
-
-        // }
     })
 }

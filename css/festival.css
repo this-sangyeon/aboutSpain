@@ -71,6 +71,7 @@ section .bg-section .festival-area  {
      visibility: hidden;
     transition: ease 0.3s;
     opacity: 0; z-index: 500;
+    overflow: hidden;
      
     
 }
@@ -105,16 +106,16 @@ section .bg-section .festival-area .festival-list{
 section .bg-section .festival-area .festival-list >img{
    width: 450px;position: absolute;transform: rotate(0deg);
 }
-section .bg-section .festival-area .festival-list > img:first-child{
+section .bg-section .festival-area .festival-list > img:first-of-type{
     position: absolute;top:10%; left:10%; transform: rotate(-10deg);
  }
- section .bg-section .festival-area .festival-list >img:first-child.active{
+ section .bg-section .festival-area .festival-list > img:first-of-type.active{
     position: absolute;top:10%; left:10%; margin-top:-60%; width:400px;left: -30%; transform: rotate(-30deg)
  }
- section .bg-section .festival-area .festival-list >img:last-child{
+ section .bg-section .festival-area .festival-list > img:last-of-type{
    position: absolute; bottom:5%; left:10%; transform: rotate(10deg);z-index: 100; width: 500px;
  }
- section .bg-section .festival-area .festival-list >img:last-child.active{
+ section .bg-section .festival-area .festival-list > img:last-of-type.active{
     position: absolute; bottom:10%; left:10%; transform: rotate(10deg);z-index: 100;
   }
 
