@@ -67,7 +67,7 @@ section .bg-section .art-area .art-list{
 }
 section .bg-section .art-area .art-list .artwork{
     display: flex; flex-direction: column;
-     align-items: center;  
+     align-items: center;  position: relative;
      transform: rotate(90deg); width: 400px; height: 500px;
     
 }
@@ -75,10 +75,20 @@ section .bg-section .art-area .art-list .artwork > img{
    height: 400px;  object-fit: cover; 
 } 
 section .bg-section .art-area .art-list .artwork > div{
-    width: 200px;height: 30px; background-color: thistle; border-radius: 30px;
-    visibility: hidden; 
+    /* margin-top: 50px; */
+    width: 200px;height: 30px; background-color: thistle; 
+    visibility: hidden; position: absolute; position: absolute; bottom: 10%;
  }
  section .bg-section .art-area .art-list .artwork > div.active{
     visibility: visible;
  }
+ section .bg-section .art-area .art-list .artwork > div > .p-wrap{
+   position: relative;  width: 100%;
+   
+ }
+ section .bg-section .art-area .art-list .artwork > div > .p-wrap p{
+    position: absolute;  top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 90%; text-align: center;
+    
+  }
 
