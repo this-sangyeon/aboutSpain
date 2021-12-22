@@ -5,46 +5,46 @@ const artPopupContainer = document.querySelector('.art-popup-container');
 const popupCloseBtn = document.querySelector('.popup-close-btn > button');
 const prevArrowBtn = document.querySelector('.popup-img-arrow > .prev');
 const nextArrowBtn = document.querySelector('.popup-img-arrow > .next');
-const popupArtImage = document.querySelector('.art-popup-area > .art-image img');
-const popupArtName = document.querySelector('.art-popup-area > .art-text h2');
-const popupArtArtist = document.querySelector('.art-popup-area > .art-text p:first-of-type');
-const popupArtYear = document.querySelector('.art-popup-area > .art-text p:last-of-type');
+const popupArtImage = document.querySelector('.art-popup-area > .art-image > img');
+const popupArtName = document.querySelector('.art-popup-area > .art-content > .art-text > h2');
+const popupArtArtist = document.querySelector('.art-popup-area > .art-content > .art-text >  p:first-of-type');
+const popupArtYear = document.querySelector('.art-popup-area > .art-content > .art-text  > p:last-of-type');
 
 let popupArtInfo = [
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'꿈',
+        artist : 'Pablo Picasso',
+        year : '1932',
         img : 'img/artwork/picasso1.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'우는 여인',
+        artist : 'Pablo Picasso',
+        year : '1937',
         img : 'img/artwork/picasso2.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'아비뇽의 처녀들',
+        artist : 'Pablo Picasso',
+        year : '1907',
         img : 'img/artwork/picasso3.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'기억의 지속',
+        artist : 'Salvador Dali',
+        year : '1931',
         img : 'img/artwork/salvador1.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'욕망의 수수께끼',
+        artist : 'Salvador Dali',
+        year : '1929',
         img : 'img/artwork/salvador2.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
+        name:'melting watch',
+        artist : 'Salvador Dali',
+        year : '1954',
         img : 'img/artwork/salvador3.jpg'
     },
     {
@@ -67,9 +67,12 @@ let popupArtInfo = [
     }
 ]
 
+let ArtListLength = popupArtInfo.length;
+
 artworkImage = Array.prototype.slice.call(artworkImage);
 artworkImageTitle = Array.prototype.slice.call(artworkImageTitle);
-artPopupIndex = 0;
+let artPopupIndex = 0;
+let artPopupInfoIndex = 0;
 
 
 for(let i = 0; i < artworkImage.length; i++){
@@ -97,10 +100,23 @@ popupCloseBtn.addEventListener('click',()=>{
     artPopupContainer.classList.remove('active');
 })
 
-const prevArrowBtn = document.querySelector('.popup-img-arrow > .prev');
-const nextArrowBtn = document.querySelector('.popup-img-arrow > .next');
-let ArtListLength = popupArtInfo.length;
+
+
 
 prevArrowBtn.addEventListener('click',()=>{
+    artPopupIndex = artPopupIndex - 1;
+    artPopupIndex < 0 && ( artPopupIndex = ArtListLength - 1);
+    popupArtImage.setAttribute('src',popupArtInfo[artPopupIndex].img)
+    popupArtName.innerText = popupArtInfo[artPopupIndex].name;
+    popupArtArtist.innerText = popupArtInfo[artPopupIndex].artist;
+    popupArtYear.innerText = popupArtInfo[artPopupIndex].year;
+})
 
+nextArrowBtn.addEventListener('click',()=>{
+    artPopupIndex = artPopupIndex + 1;
+    artPopupIndex > ArtListLength - 1 && (artPopupIndex = 0);
+    popupArtImage.setAttribute('src',popupArtInfo[artPopupIndex].img)
+    popupArtName.innerText = popupArtInfo[artPopupIndex].name;
+    popupArtArtist.innerText = popupArtInfo[artPopupIndex].artist;
+    popupArtYear.innerText = popupArtInfo[artPopupIndex].year;
 })
