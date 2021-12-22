@@ -142,7 +142,7 @@ section .bg-section .art-area .art-list .artwork > div{
      height: 100%; margin-right:5%;
 }
 .art-image img{
-    height: 80%;  position: relative; top:50%; transform: translateY( -50%);
+    height: 75%;  position: relative; top:50%; transform: translateY( -50%);
 }
 .art-content{
      height: 100%; 
