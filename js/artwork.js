@@ -48,22 +48,22 @@ let popupArtInfo = [
         img : 'img/artwork/salvador3.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
-        img : 'img/artwork/picasso1.jpg'
+        name:'구엘공원',
+        artist : 'Antonio Gaudi',
+        year : '1914',
+        img : 'img/artwork/Gaudi1.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
-        img : 'img/artwork/picasso1.jpg'
+        name:'사그라다 파밀리아 대성당',
+        artist : 'Antonio Gaudi',
+        year : '1882 ~',
+        img : 'img/artwork/Gaudi2.jpg'
     },
     {
-        name:'name',
-        artist : 'artist',
-        year : 'Year',
-        img : 'img/artwork/picasso1.jpg'
+        name:'카사 바트요',
+        artist : 'Antonio Gaudi',
+        year : '1912',
+        img : 'img/artwork/Gaudi3.jpg'
     }
 ]
 
