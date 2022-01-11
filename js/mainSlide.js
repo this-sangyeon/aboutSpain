@@ -45,21 +45,8 @@ leftBtn.addEventListener('click', function(){
      }
  });
 
-// 자동슬라이드 도전 중..
-// var slideIndex = 0;
-// showSlides();
+ mainContainer.addEventListener('resize',()=>{
 
-// function showSlides(){
-//    for( let i = 0; i < mainSlides.length; i++ ){
-//     mainSlides[i].style.display = "none";
-//    }
-//    slideIndex++;
-//    if(slideIndex > mainSlides.length ){
-//        slideIndex = 1;
-//    }
-//    mainSlides[slideIndex - 1].style.display = "block";
-//    setTimeout(showSlides, 2000);
-// }
-
+ })
 
 
