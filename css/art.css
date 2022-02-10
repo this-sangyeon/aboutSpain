@@ -33,7 +33,7 @@ section .bg-section.title .main-title {
 }
 section .bg-section.title .main-title p{
     font-size: 6em;font-family: 'Montserrat';margin: 0; position: absolute;top:7%; left: 5%;
-    display: inline; font-weight: 700; letter-spacing: 0px;
+    display: inline; font-weight: 700; letter-spacing: 0px; transition: 0.5s ease-in-out;
 }
 section .bg-section.title .main-title h1{
     font-size: 9em;font-family: 'Montserrat';margin: 0; position: absolute; bottom:5%; right: 5%;
