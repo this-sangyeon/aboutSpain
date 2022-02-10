@@ -1,0 +1,137 @@
+@media screen  and (max-width : 1300px){
+    section .bg-section.title .main-title span:last-child{
+        width: 50%; 
+    }
+
+    section .bg-section .festival-area .festival-list > img{
+        width: 350px;left:50%;transform: translate( -50%,-30%);
+     }
+     section .bg-section .festival-area .festival-list > .first-img.active{
+        position: absolute;top:20%; left:60%;  transform: rotate(-10deg);
+        transition:0.3s ease-in-out;
+     }
+     section .bg-section .festival-area{
+        flex-direction: column-reverse;
+    }
+    section .bg-section .festival-area .title-area{
+        width: 100%; height: 45%; position: relative;
+    }
+    section .bg-section .festival-area .festival-list{
+       width: 100%; height: 55%; position: relative;
+      }
+      section .bg-section .festival-area .title-area  h2{
+           font-size: 6rem; margin: 0; line-height: 5rem;
+    }
+    section .bg-section .festival-area .title-area  p {
+        width: 70%;margin: 0;
+    }
+}
+
+@media screen  and (max-width : 1000px){
+    section .bg-section.title .main-title span:last-child{
+        width: 40%; 
+    }
+    .art-image img{
+        height: 60%;  position: relative; top:50%; transform: translateY( -50%);
+    }
+    section .bg-section .festival-area .festival-list > img{
+        width: 350px;left:50%;transform: translate( -50%,-30%);
+     }
+    section .bg-section .festival-area .festival-list > .first-img.active{
+        top:20%; left:50%;  transform: rotate(-10deg);
+       
+     }
+}
+@media screen  and (max-width : 800px){
+    section .bg-section.title .main-title span:last-child{
+        width: 30%; 
+    }
+    .art-popup-area{
+        flex-direction: column;
+    }
+    .art-image{
+        height: 80%; margin-right:0%;
+   }
+   .art-image img{
+        width: 75%; height: auto; position: relative; top:50%; left:50%; transform: translate(-50%, -50%); transition: 0.5s ease-in-out;
+    }
+    .popup-img-arrow{
+        top:80%; 
+    }
+   .art-content{
+        height: 20%; width: 60%; left:50%; transform: translateX( -50%); position: relative;
+    }
+    .art-text h2{
+       margin: 0;
+    }
+    .art-text{
+        top:10%;  transform: translateY(-50%); color:white;
+        color:white; text-align: center;
+     }
+     .art-text p:first-of-type, .art-text p:last-of-type {
+        margin: 0;
+    }
+    section .bg-section .Tourist .tour-area .title-area {
+        width: 90%; height: 30%; display: flex; position: absolute; top:0; left: 5%;
+        flex-direction: column; color:white; align-items: center; justify-items: center;
+    }
+    section .bg-section .Tourist .tour-area .title-area h2{
+        font-family: 'Montserrat'; font-size: 5rem; height: 40%; margin: 0;
+    }
+    section .bg-section .Tourist .tour-area .title-area p {
+        height: 60%; width: 100%; 
+        font-family:'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 300; margin-left:0px; line-height: 1.5rem; width: 70%;
+    }
+    section .bg-section .festival-area .title-area  h2{
+        font-size: 5rem; margin: 0; line-height: 4rem;
+ }
+    section .bg-section .festival-area .festival-list > img{
+        width: 300px;left:50%;transform: translate( -50%,-30%);
+     }
+    section .bg-section .festival-area .festival-list > .first-img.active{
+        top:20%; left:50%;  transform: rotate(-10deg);
+       
+     }
+     section .bg-section .festival-area .title-area  p:first-of-type {
+        font-family:'Noto Sans KR', sans-serif; font-size: 2rem; font-weight: 500; 
+    }
+}
+@media screen  and (max-width : 700px){
+    section .bg-section.title .main-title span:last-child{
+        width: 30%; 
+    }
+    section .bg-section.title .main-title h1{
+       font-size: 7em;
+    }
+    section .bg-section.title .main-title p{
+        font-size: 7em;
+    }
+    section .bg-section.title{
+        background-attachment : fixed;
+        background-position:70% 50%;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen  and (max-width : 600px){
+    section .bg-section.title .main-title span:last-child{
+        width: 20%; 
+    }
+    .art-text h2{
+        font-size: 2rem;
+     }
+     .art-text p:first-of-type, .art-text p:last-of-type {
+        font-size: 1rem;
+    }
+    header .spainMenu{
+        right:10%; 
+    }
+    section .festivalMenu ul{
+        margin: 0; padding: 0%;
+    }
+    section .festivalMenu ul li{
+      border-bottom:none;
+       
+    }
+}
