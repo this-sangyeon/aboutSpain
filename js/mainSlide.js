@@ -45,8 +45,6 @@ leftBtn.addEventListener('click', function(){
      }
  });
 
- mainContainer.addEventListener('resize',()=>{
 
- })
 
 
