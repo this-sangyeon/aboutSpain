@@ -26,6 +26,7 @@ section .bg-section.title{
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
 }
 section .bg-section.title .main-title {
     width: 100%; height: 100%; position: absolute; z-index: 500; color:white;
@@ -40,6 +41,7 @@ section .bg-section.title .main-title p{
 }
 
 section .bg-section.title .main-title span{
+    display: none;
     width: 2px; height: 70%; background-color: white; position: absolute; top:15%; left: 50%; transform: rotate(-40deg);
 }
 section .bg-section .black-area{
@@ -88,7 +90,7 @@ section .bg-section .festival-area .title-area {
 
 
 section .bg-section .festival-area .title-area  h2{
-    font-family: 'Montserrat'; font-size: 7rem; margin: 0;
+    font-family: 'Montserrat'; font-size: 7rem; margin: 0; transition: 0.5s ease-in-out;
     
 }
 section .bg-section .festival-area .title-area  p {
@@ -99,12 +101,12 @@ section .bg-section .festival-area .title-area  p:first-of-type {
     font-family:'Noto Sans KR', sans-serif; font-size: 2rem; font-weight: 500; 
 }
 section .bg-section .festival-area .festival-list{
-    width:20%; height: 100%; color:white; position: absolute;  right:15%;
+    width:30%; height: 100%; color:white; position: absolute;  right:0%;
     /* justify-content:center; align-items: center; justify-items: center; */
 }
 section .bg-section .festival-area .festival-list > img{
    width: 450px;position: absolute;transform: rotate(0deg);
-   position: absolute; top:50%; transform: translateY( -50%);
+   position: absolute; top:50%; transform: translateY( -50%); transition:0.3s ease-in-out;
 }
 section .bg-section .festival-area .festival-list > .first-img{
     position: absolute; transform: translateY(-50%) rotate(-10deg); transition:0.3s ease-in-out;

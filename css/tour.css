@@ -57,9 +57,6 @@ section .bg-section.title .main-title p{
     display: inline;font-weight: 700; letter-spacing: 10px;  
 }
 
-section .bg-section.title .main-title span{
-    width: 2px; height: 70%; background-color: white; position: absolute; top:15%; left: 50%; transform: rotate(-40deg);
-}
 
 section .bg-section .black-area{
     width: 100%;
@@ -100,15 +97,15 @@ section .bg-section .Tourist .tour-area .tourarea-list{
 
 
 section .bg-section .Tourist .tour-area .tourarea-list > ul {
-    width: 80%;height: 100%; display: flex; flex-direction: row;  
-    justify-content:center; align-items: center; justify-items: center;
-    padding:0;
+    width: 90%;height: 100%; display: flex; flex-direction: row;  
+    padding:0; position: relative; 
+    justify-content: space-between;
     
 }
 section .bg-section .Tourist .tour-area .tourarea-list> ul > li{
-    width: 100%;height: 100%; list-style: none;
-    margin-right:50px;margin-left:50px;display: flex; flex-direction: column;
-    align-items: center; justify-items: center;
+    width: 30%;height: 100%; list-style: none;
+   display: flex; flex-direction: column;
+   
     
 }
 

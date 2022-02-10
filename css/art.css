@@ -37,14 +37,14 @@ section .bg-section.title .main-title p{
 }
 section .bg-section.title .main-title h1{
     font-size: 9em;font-family: 'Montserrat';margin: 0; position: absolute; bottom:5%; right: 5%;
-    display: inline; font-weight: 700; letter-spacing: 7px;
+    display: inline; font-weight: 700; letter-spacing: 7px; transition: 0.5s ease-in-out;
 }
 
 section .bg-section.title .main-title span{
     width: 60%; height: 2px; background-color: white; position: absolute; top:14%; right: 0%; 
 }
 section .bg-section.title .main-title span:last-child{
-    width: 60%; height: 2px; background-color: white; position: absolute; top:85%; left: 0%; 
+    width: 60%; height: 2px; background-color: white; position: absolute; top:85%; left: 0%;  transition: 0.5s ease-in-out;
 }
 section .bg-section .black-area{
     width: 100%;
@@ -72,7 +72,7 @@ section .bg-section .art-area .art-list .artwork{
     
 }
 section .bg-section .art-area .art-list .artwork > img{
-    width: 400px; height: 400px;  object-fit: cover; 
+    width: 400px; height: 400px;  object-fit: cover;   transition: 0.5s ease-in-out;
 } 
 section .bg-section .art-area .art-list .artwork > div{
     /* margin-top: 50px; */
@@ -142,7 +142,7 @@ section .bg-section .art-area .art-list .artwork > div{
      height: 100%; margin-right:5%;
 }
 .art-image img{
-    height: 75%;  position: relative; top:50%; transform: translateY( -50%);
+    height: 75%;  position: relative; top:50%; transform: translateY( -50%); transition: 0.5s ease-in-out;
 }
 .art-content{
      height: 100%; 
@@ -152,16 +152,16 @@ section .bg-section .art-area .art-list .artwork > div{
    color:white; 
 }
 .art-text h2{
-    font-size: 2rem;font-family: 'Montserrat'; font-weight: 500; text-transform: capitalize;
+    font-size: 3rem;font-family: 'Montserrat'; font-weight: 500; text-transform: capitalize;
 }
 .art-text p{
-    font-size: 1rem;
+    font-size: 2rem; font-family:'Noto Sans KR', sans-serif;
 }
 .art-text p:first-of-type {
-    font-family:'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 500; 
+    font-weight: 500; 
 }
 .art-text p:last-of-type {
-    font-family:'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 100; 
+   font-weight: 100; font-size: 1.5rem;
 }
  
 

@@ -20,7 +20,7 @@ section .bg-section{
     position: absolute;
    
 }
-/* main */
+
 
 section .bg-section .main_text {
     width: 100%; height: 100%; position: fixed; left: 10%; top:20%; z-index:1000; margin:0;
