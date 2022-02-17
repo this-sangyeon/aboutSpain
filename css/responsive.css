@@ -33,6 +33,32 @@
         width: 70%;margin: 0;
     }
 }
+@media screen and (max-width : 1024px){
+    section .bg-section .Tourist .tour-area .tourarea-list{
+        display: flex; 
+        width:100%; height: 60%; color:white; position: absolute; top:30%; justify-content:center; align-items: center; justify-items: center;
+    }
+    section .bg-section .Tourist .tour-area .tourarea-list > ul {
+        width: 90%;height: 100%; display: flex; flex-direction: column;
+        padding:0; position: relative; 
+        justify-content: space-between;
+        
+    }
+    section .bg-section .Tourist .tour-area .tourarea-list> ul > li{
+        width: 100%;height: 30%; 
+       display: flex; flex-direction: row; 
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > img{
+        width: 45%; height: auto;
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl{
+        width: 55%;height: 100%; margin-left: 5%; box-sizing: content-box;
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > dt{
+        width: 100%; margin-top:0px; margin-bottom:20px;font-size: 2rem;
+    }
+}
+
 
 @media screen  and (max-width : 1000px){
     section .bg-section.title .main-title span:last-child{
@@ -82,9 +108,17 @@
      .art-text p:first-of-type, .art-text p:last-of-type {
         margin: 0;
     }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl{
+      margin-left:2%; margin-top: 0;
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > .under{
+          width: 100%; margin-top:10px; margin-bottom:5px;font-size: 2rem;
+      }
+    section .bg-section .Tourist .tour-area .tourarea-list > ul >li > dl > dd{
+        line-height: 1.2rem; font-size: 1rem;
+    }
 }
 @media screen  and (max-width : 800px){
-    
     section .bg-section .Tourist .tour-area .title-area {
         width: 90%; height: 30%; display: flex; position: absolute; top:0; left: 5%;
         flex-direction: column; color:white; align-items: center; justify-items: center;
@@ -109,6 +143,13 @@
      section .bg-section .festival-area .title-area  p:first-of-type {
         font-family:'Noto Sans KR', sans-serif; font-size: 2rem; font-weight: 500; 
     }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > .under{
+        width: 100%; margin-top:0px; margin-bottom:0px;font-size: 1.6rem;
+    }
+  section .bg-section .Tourist .tour-area .tourarea-list > ul >li > dl > dd{
+      line-height: 1.2rem; font-size: 0.9rem;
+  }
+   
 }
 @media screen  and (max-width : 700px){
     section .bg-section.title .main-title span:last-child{
@@ -125,6 +166,19 @@
         background-position:70% 50%;
         background-size:cover;
         background-repeat: no-repeat;
+    }
+    section .bg-section .Tourist .tour-area .title-area {
+        width: 100%; height: 20%;  left: 0%;
+    }
+    section .bg-section .Tourist .tour-area .title-area p {
+        width: 80%; font-size: 1rem; line-height: 1.3rem;
+    }
+    
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > .under{
+        width: 100%; margin-top:0px; margin-bottom:0px;font-size: 1.4rem;
+    }
+    section .bg-section .Tourist .tour-area .tourarea-list > ul >li > dl > dd{
+        line-height: 1.2rem; font-size: 0.9rem;
     }
 }
 
@@ -155,30 +209,40 @@
      .art-text p:first-of-type, .art-text p:last-of-type {
         font-size: 1rem;
     }
-}
-
-@media screen and (max-width : 1024px) and (max-height : 1366px){
     section .bg-section .Tourist .tour-area .tourarea-list{
-        display: flex; 
-        width:100%; height: 60%; color:white; position: absolute; top:30%; justify-content:center; align-items: center; justify-items: center;
+        top:20%; height: 80%;
     }
-    section .bg-section .Tourist .tour-area .tourarea-list > ul {
-        width: 90%;height: 100%; display: flex; flex-direction: column;
-        padding:0; position: relative; 
-        justify-content: space-between;
-        
+    section .bg-section .Tourist .tour-area .title-area p {
+        width: 90%; font-size: 0.9rem; line-height: 1.1rem;
     }
     section .bg-section .Tourist .tour-area .tourarea-list> ul > li{
-        width: 100%;height: 30%; 
-       display: flex; flex-direction: row; 
+        width: 100%;height: 32%; flex-direction: column; 
     }
     section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > img{
-        width: 45%; height: auto;
+        height: 50%; width: 200px; position: relative; left:50%; transform: translateX(-50%);
     }
     section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl{
-        width: 55%;height: 100%; margin-left: 5%; box-sizing: content-box;
-    }
-    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > dt{
-        width: 100%; margin-top:0px; margin-bottom:20px;font-size: 2rem;
+        width: 100%;height: 50%;
     }
 }
+@media screen  and (max-width : 400px){
+    section .bg-section.title .main-title h1{
+        font-size: 5rem;
+    }
+    section .bg-section .Tourist .tour-area .title-area h2 {
+        font-size: 3rem;
+    }
+    section .bg-section .Tourist .tour-area .title-area p {
+        font-size: 0.9rem;line-height: 1.2rem;
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > img{
+        margin-bottom: 5px;
+    }
+    section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > .under{
+        width: 100%; margin-top:0px; margin-bottom:0px;font-size: 1.2rem;
+    }
+    section .bg-section .Tourist .tour-area .tourarea-list > ul >li > dl > dd{
+        line-height: 1rem; font-size: 0.8rem;
+    }
+}
+

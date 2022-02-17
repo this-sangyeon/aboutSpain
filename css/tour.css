@@ -50,11 +50,11 @@ section .bg-section.title .main-title {
 }
 section .bg-section.title .main-title h1{
     font-size: 9em;font-family: 'Montserrat';margin: 0; position: absolute;top:5%; left: 5%;
-    display: inline; font-weight: 700; letter-spacing: 7px;
+    display: inline; font-weight: 700; letter-spacing: 7px; transition: 0.3s ease-in-out;
 }
 section .bg-section.title .main-title p{
     font-size: 9em;font-family: 'Montserrat';margin: 0; position: absolute;bottom:5%; right: 5%;
-    display: inline;font-weight: 700; letter-spacing: 10px;  
+    display: inline;font-weight: 700; letter-spacing: 10px;  transition: 0.5s ease-in-out; 
 }
 
 
@@ -88,7 +88,7 @@ section .bg-section .Tourist .tour-area .title-area h2{
     
 }
 section .bg-section .Tourist .tour-area .title-area p {
-    font-family:'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 300; margin-left:40px; line-height: 1.7rem; width: 70%;
+    font-family:'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 300; margin-left:40px; line-height: 1.7rem; width: 70%;transition: 0.5s ease-in-out;
 }
 section .bg-section .Tourist .tour-area .tourarea-list{
     display: flex;
@@ -111,11 +111,11 @@ section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl{
     width: 100%;height: 100%;
 }
 section .bg-section  .Tourist .tour-area .tourarea-list > ul >li > dl > dt{
-    width: 100%; margin-top:40px; margin-bottom:20px;font-size: 2rem;
+    width: 100%; margin-top:40px; margin-bottom:20px;font-size: 2rem;transition: 0.3s ease-in-out;
 }
 section .bg-section .Tourist .tour-area .tourarea-list > ul >li > dl > dd{
     font-family:'Noto Sans KR', sans-serif; font-weight: 200;
-    margin:0; text-align: justify; line-height: 25px;
+    margin:0;line-height: 1.2rem; transition: 0.3s ease-in-out;
 }
 
 
